@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>Hello Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</html>
+<body>
+    <div id="simple">
+        <input type="text" id="a" v-model="name" placeholder="이름을 입력하세요" />
+        <br/>
+        입력된 이름 : <h2 v-html="name"></h2>
+    </div>
+    <script type="text/javascript">
+        var twoway = new Vue({
+            el : '#simple',
+            data : {
+                name : ''
+            }
+        })
+    </script>
+</body>
